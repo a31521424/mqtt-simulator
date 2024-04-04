@@ -23,16 +23,17 @@ class Topic:
         self.connect.connect(host=self.config.host, port=self.config.port, keepalive=self.config.keep_alive)
 
     def start(self):
-        self.send_message_loop()
+        while True:
+            self.send_message()
+            time.sleep(self.config.cycle_time)
 
-    def send_message_loop(self):
+    def send_message(self):
         for topic in self.config.topics:
             upload_data = topic.generate_data()
             self.connect.publish(topic=topic.topic_url, payload=upload_data, )
             print(f'upload event {upload_data}')
             time.sleep(1)
         time.sleep(self.config.cycle_time)
-        self.send_message_loop()
 
     def get_on_connect(self):
         def func(client, userdata, flags, reason_code, properties):
