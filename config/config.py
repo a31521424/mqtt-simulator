@@ -25,12 +25,12 @@ class TopicConfig(BaseModel):
     sensor_name: str = ""
 
     def generate_data(self) -> str:
-        data = {
+        data = [{
             "n": self.sensor_name,
             "v": self.computing_data(),
             "u": self.unit,
             "t": int(time.time())
-        }
+        }]
         return json.dumps(data)
 
     def computing_data(self) -> Union[str, int, float]:
