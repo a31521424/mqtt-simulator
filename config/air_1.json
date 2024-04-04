@@ -1,11 +1,11 @@
 {
   "host": "127.0.0.1",
   "port": 1883,
-  "username": "3c7096bc-1ecf-4114-9824-a76d177862d3",
-  "password": "2f17a01a-b563-4e31-bb90-40e0b9dd27f2",
+  "username": "4fbdf823-0f65-4385-95d0-96445420496c",
+  "password": "f32733da-a881-4ac7-9659-deb89f9928a7",
   "topics": [
     {
-      "channel": "5308740d-dd32-4eb6-9902-300f4e008e78",
+      "channel": "3e7477d2-855f-40c8-b398-26ef37e1aafa",
       "sub_topic": "home_air",
       "unit": "AQI",
       "sensor_name": "bedroom_air_sensor"
