@@ -33,7 +33,6 @@ class Topic:
             self.connect.publish(topic=topic.topic_url, payload=upload_data, )
             print(f'upload event {upload_data}')
             time.sleep(1)
-        time.sleep(self.config.cycle_time)
 
     def get_on_connect(self):
         def func(client, userdata, flags, reason_code, properties):
