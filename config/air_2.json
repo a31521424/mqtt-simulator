@@ -1,0 +1,14 @@
+{
+  "host": "127.0.0.1",
+  "port": 1883,
+  "username": "4239dc84-5726-411c-afe9-4d77e4aef714",
+  "password": "5867ee75-b3b9-479c-a265-c4f2e4db4c1e",
+  "topics": [
+    {
+      "channel": "3e7477d2-855f-40c8-b398-26ef37e1aafa",
+      "sub_topic": "home_air",
+      "unit": "AQI",
+      "sensor_name": "livingroom"
+    }
+  ]
+}

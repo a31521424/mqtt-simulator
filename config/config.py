@@ -34,7 +34,7 @@ class TopicConfig(BaseModel):
         return json.dumps(data)
 
     def computing_data(self) -> Union[str, int, float]:
-        if self.unit == '°C':
+        if self.unit == 'c':
             return random.uniform(0, 40)
         if self.unit == '%':
             return random.uniform(0, 100)

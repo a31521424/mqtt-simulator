@@ -1,0 +1,14 @@
+{
+  "host": "127.0.0.1",
+  "port": 1883,
+  "username": "d9975b14-f90a-4209-89e7-7a1c6ac5e31b",
+  "password": "bde9222c-68ef-4461-98e8-23f731351544",
+  "topics": [
+    {
+      "channel": "3e7477d2-855f-40c8-b398-26ef37e1aafa",
+      "sub_topic": "home_temp",
+      "unit": "c",
+      "sensor_name": "beedroom_temp"
+    }
+  ]
+}
